@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,700&display=swap');
+
+
+.skills {
+    display: grid; 
+    width: 100%;
+    max-width: 600px; 
+    gap:1px; 
+    margin-bottom: 2px;
+   
+    
+}
+.skillname ul li{
+    font-size: 12px;
+    font-weight: 700;
+    color: #aa000e;
+    margin: 10px 0;
+
+}
+
+.skillper {
+    width: 0; /* Start with 0 width */
+    transition: width 1s ease-in-out;
+}
+
+.skill-bar{
+    height: 8px;
+    background-color: #ec828a;
+    border-radius: 5px;
+}
+.skill{
+   
+    margin-bottom: 1px;
+}
+
+.skillper{
+    height: 9px;
+    background-color: #ff004f;
+    position: relative;
+    border-radius: 5px;
+    animation: fillbar 3s ;
+}
+
+.skillper::before{
+    content: attr(per);
+    position: absolute;
+    color: #E0C097;
+    background-color: #B85C38;
+    top: -26px;
+    right: 0;
+    font-size: 10px;
+    padding: 2px 3px;
+    border-radius: 6px;
+    transform: translate(100%);
+}
+
+.skillper::after{
+    content: '';
+    height: 5px;
+    width: 5px;
+    background-color: #B85C38;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    transform: rotate(45deg);
+}
+
+@keyframes fillbar{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+
+

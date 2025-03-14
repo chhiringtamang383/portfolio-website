@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#ff004f">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ctmgportfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="res/portfolio.css">
+    <link rel="stylesheet" href="animation.css">
+   <link rel="stylesheet" href="mediaquer.css">
+
+</head>
+<body class="dark">
+    
+    <div id="header">j
+
+        <div class="container">
+            <nav>
+                <a href="#header"><img src="logo2.png" class="logo"></a>
+                <ul class="nav-items">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <button id="mode"> 
+                        M<i class="fa-regular fa-sun" id="icon" class="open-menu"></i>de
+                    </button>
+                    <i class="fa-solid fa-xmark"  class="menus" id="close-menu" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars"  class="menus" id="open-menu" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <span style="padding-left: 5%;" class="first-txt">I am</span>
+                <span style="font-weight: bold;">Chhiring</span><br>
+                <h1><span class="second-txt"></span><br></h1><br>
+                <span class="first-txt" style="padding-left: 5%;">From</span> 
+                <span style="color: rgb(160, 7, 7);text-shadow: 
+                -1px -1px 0 #00f,  
+                 2px -1px 0 #00f,
+                -1px  2px 0 #00f,
+                 2px  2px 0 #00f;
+                 letter-spacing: 3px;"
+                 ><b>Nepal</b></span>
+                 
+            </div>
+            <br>
+            <a href="Personal CV.pdf" download target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: white;">  <button class="cvbtn" style="right: 40%; background-color: #ff004f;">
+               
+                    Download CV <i class="fa-solid fa-download"></i>
+            
+            </button>
+            </a>
+            
+        </div>
+    </div>
+    
+    
+    <!-- ----------about----- -->
+
+    <div id="about">
+        <div class="container-about">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about3.jpg">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                <p>Welcome to my portfolio! 
+                    As a passionate digital marketer and web developer,
+                     I thrive on crafting unique online experiences. 
+                     With a commitment to continuous learning. I believe in the power of creativity and data-driven strategies to drive success. Let's collaborate and shape the digital future together,
+                     turning ideas into impactful realities!
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> <!----decalaration of the Event --->
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <!------------------ skills set --------------------------------------->
+                        <div class="skills">
+                            <div class="skill">
+                                <div class="skillname">HTML</div>
+                                <div class="skill-bar">
+                                    <div class="skillper" per='70%' style='max-width:70%'></div>
+                                </div>
+                            </div>
+                    
+                            <div class="skill">
+                                <div class="skillname">CSS</div>
+                                <div class="skill-bar">
+                                    <div class="skillper" per='70%' style='max-width:70%'></div>
+                    
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skillname">Javascript</div>
+                                <div class="skill-bar">
+                                    <div class="skillper" per='55%' style='max-width:55%'></div>
+                    
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skillname">Java</div>
+                                <div class="skill-bar">
+                                    <div class="skillper" per='40%' style='max-width:40%'></div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="skill">
+                                <div class="skillname">React</div>
+                                <div class="skill-bar">
+                                    <div class="skillper" per='50%' style='max-width:50%'></div>
+                    
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skillname">Figma</div>
+                                <div class="skill-bar">
+                                    <div class="skillper" per='45%' style='max-width:45%'></div>
+                    
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skillname">PHP</div>
+                                <div class="skill-bar">
+                                    <div class="skillper" per='45%' style='max-width:45%'></div>
+                    
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skillname">Wordpress</div>
+                                <div class="skill-bar">
+                                    <div class="skillper" per='60%' style='max-width:60%'></div>
+                    
+                                </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <div class="skillname">MYSQL</div>
+                            <div class="skill-bar">
+                                <div class="skillper" per='60%' style='max-width:60%'></div>
+                
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <!---------------------------experience--------->
+                        <ul><li><span>2023</span><br><p>Digital marketing Traninng in Spyder lab(professional IT training in Kathmandu)</p></li></ul>
+                        <ul><li><span>2024-current</span><br><p>Digital marketer at sanjenritreks & Expedition</p></li></ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <!---------------------------education--------->
+                        <ul><li><span>Secondary school level</span><br><p>Pranjali world school</p></li></ul>
+                        <ul><li><span>High school level</span><br><p>Orient College</p></li></ul>
+                        <ul><li><span>Bachelor Level</span><br><p>St. lawerence College (Tribhuwan University)</p></li></ul>
+
+                    </div>
+
+                </div>
+                
+              </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list"> 
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2> Web-design</h2>
+                    <p>I create visually stunning, user-friendly websites with responsive designs, intuitive navigation, 
+                        and tailored aesthetics to meet your goals effectively.</p>
+                        <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Web-developer</h2>
+                    <p>I  can craft custom coded and wordpress web-site
+                        with both static and dynamic features, using the latest technologies, focusing on clean code, 
+                       performance, security, and user satisfaction.</p>
+                        <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <h2> Digital-Marketer</h2>
+                    <p>After creating your website, I can write engaging, 
+                        high-quality content tailored to your audience and
+                         use various SEO tools to optimize it. 
+                         This combination will enhance your site's visibility, 
+                         improve search engine rankings, and ultimately drive more traffic to your site,
+                         helping you reach your goals effectively.</p>
+                        <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--myportfolio-------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">
+                My Work
+            </h1>
+            <div class="work-list">
+                <div class="work">
+                <img src="wordpresswebdevelopment.webp">
+                <DIV class="LAYER">
+                    <h3>Wordpress Web-site </h3>
+                    <p> I can help you to create a wordpress website  for the dyanmic changes with the help of awesome themes 
+                        and plugins to bring your marketin Virtual world.
+                    </p>
+                    <a href="https://sanjenritreks.com/wp-admin/#/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </DIV>
+            </div>
+    
+            <div class="work">
+                <img src="Custom-Web-Development-Company.webp">
+                <DIV class="LAYER">
+                    <h3>Custom Coded Web-site </h3>
+                    <p> I can assist you to create a  custom coded website for the higher flexibility and control of your website.
+                        
+                    </p>
+                    <a href="https://sanjenritreks.com/wp-admin/#/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </DIV>
+            </div>
+            <div class="work">
+                <img src="SEO.jpg">
+                <DIV class="LAYER">
+                    <h3>SEO analytics</h3>
+                    <p>Not only in development but also can assist you to promote and optimize  your website to the Search engines. 
+                        In addition handling the trafic of website.
+                    </p>
+                    <a href="https://sanjenritreks.com/wp-admin/#/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </DIV>
+                
+            </div>
+            <div class="work">
+                <img src="web-design.jpg">
+                <DIV class="LAYER">
+                    <h3>Web-design</h3>
+                    <p> I can create visually stunning, user-friendly websites with responsive designs, intuitive navigation, 
+                        and tailored aesthetics to meet your goals effectively.
+                    </p>
+                    <a href="https://sanjenritreks.com/wp-admin/#/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </DIV>
+            </div>
+         </div>
+        </div>
+    </div>
+             <a href="#" class="btn">See more</a><br><br><br><br>
+    <!---------------------contact ---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left" >
+                    <h1 class="sub-title">Contact Me</h1><br>
+                    <p><i class="fa-solid fa-square-envelope"></i>tamangchhiring383@gmail.com</p><br>
+                    <p><i class="fa-solid fa-phone"></i>+977-9808820863</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/?ref=homescreenpwa" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@tmgphurbaxiring?_t=ZS-8ta4HGhuyG8&_r=1" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@tmgphurbaxiring?_t=ZS-8ta4HGhuyG8&_r=1" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-right" method="post">
+                    <form name="submit-to-google-sheet" action="/submit" method="POST">
+                            <label for="name"></label>
+                            <input type="text" id="name" name="Name" placeholder="Your Name" required>
+                        
+                            <label for="email"></label>
+                            <input type="email" id="email" name="Email" placeholder="Your Email" required>
+                        
+                            <label for="message"></label>
+                            <textarea id="message" name="Message" rows="6" placeholder="Your Message"></textarea>
+                        
+                            <button type="submit" class="button">Submit</button>
+                        </form>
+                        <div class="overlay" id="overlay">
+                            <div class="loader"></div>
+                        </div>
+                         <br>
+                         <br>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+        
+
+        </div>
+        <div class="copyright" id="mycopyright" style="text-align:center;width:100%; padding:25px;
+        background:#262626;
+        font-weight: 250;
+        color:#fff;
+        height:fit-content;
+        font-size: 13px;">
+              <p>Copyright <i class="fa-solid fa-copyright"></i> <span id="currentYear"></span> Chhiring tmz . All rights reserved</p>
+        </div>
+        <div class="scroll" id="scrollUp" style="display: none;">
+            <a href="#header"><i class="fa-solid fa-up-long"></i></a>
+        </div>
+        <div class="scroll" id="scrollDown" style="display: none;">
+            <a href="#mycopyright"><i class="fa-solid fa-down-long"></i></a>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script><!--------cdn for text animation(typewriter effect)gt------------->
+    <script src="portfolio.js"></script>   
+    <script src="animation.js"></script>   
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    
+</body>
+</html>
